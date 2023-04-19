@@ -6,7 +6,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class UserView {
-    private Long id;
     private String name;
     private String email;
 }

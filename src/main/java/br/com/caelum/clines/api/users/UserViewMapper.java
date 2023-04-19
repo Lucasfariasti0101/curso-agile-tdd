@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 public class UserViewMapper implements Mapper<User, UserView> {
     @Override
     public UserView map(User source) {
-        var id = source.getId();
         var name = source.getName();
         var email = source.getEmail();
-        return new UserView(id, name, email);
+        return new UserView(name, email);
     }
 }
